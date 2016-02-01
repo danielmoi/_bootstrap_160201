@@ -1,176 +1,66 @@
-* {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /*
- * Globals
- */
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
+Error: Invalid CSS after " *\/": expected "}", was ""
+        on line 94 of /Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/_main.scss
+        from line 11 of /Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/style.scss
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none;
-  /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
+89:  *\/
 
-/*
- * Base structure
- */
-html,
-body {
-  height: 100%;
-  background-color: #333;
-}
-
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%;
-  /* For at least Firefox */
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
-}
-
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
-}
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.masthead-nav > li {
-  display: inline-block;
-}
-
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  /* IE8 proofing */
-  color: rgba(255, 255, 255, 0.75);
-  border-bottom: 2px solid transparent;
-}
-
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255, 255, 255, 0.25);
-}
-
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-
-  .masthead-nav {
-    float: right;
-  }
-}
-/*
- * Cover
- */
-.cover {
-  padding: 0 20px;
-}
-
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-/*
- * Footer
- */
-.mastfoot {
-  color: #999;
-  /* IE8 proofing */
-  color: rgba(255, 255, 255, 0.5);
-}
-
-/*
- * Affix and center
- */
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%;
-    /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
-}
+Backtrace:
+/Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/_main.scss:94
+/Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/style.scss:11
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:1164:in `expected'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:1099:in `expected'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:1094:in `tok!'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:643:in `block'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:635:in `ruleset'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:660:in `block_child'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:653:in `block_contents'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:42:in `parse'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/engine.rb:393:in `_to_tree'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/engine.rb:299:in `to_tree'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:307:in `visit_import'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:88:in `with_import'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:115:in `with_frame'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:88:in `with_import'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:306:in `visit_import'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:115:in `with_frame'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+org/jruby/RubyArray.java:2412:in `map'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:161:in `visit_children'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/engine.rb:268:in `render'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:136:in `call'
+file:/Applications/compass.app/Contents/Java/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:329:in `watch'
+org/jruby/RubyProc.java:271:in `call'
+/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
+/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/listener.rb:271:in `initialize_adapter'
+org/jruby/RubyProc.java:271:in `call'
+/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/adapter.rb:244:in `report_changes'
+/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/adapter.rb:313:in `poll_changed_directories'
+/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/adapter.rb:289:in `start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \" */\": expected \"}\", was \"\"\A         on line 94 of /Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/_main.scss\A         from line 11 of /Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/style.scss\A \A 89:  */"; }
