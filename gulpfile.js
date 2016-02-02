@@ -67,10 +67,10 @@ gulp.task('scripts', function () {
 // Gulp style files – minify and rename
 gulp.task('styles', function () {
   // copy css lib, without doing anything
-  gulp.src('src/css/lib/**/*.js')
+  gulp.src('src/css/lib/**/*.css')
     .pipe(gulp.dest('dist/css/lib'));
   // do the rest
-  return gulp.src(['src/css/**/*.css', '!src/css/**/*.min.css', '!src/css/lib'])
+  return gulp.src(['src/css/style.css', '!src/css/style.min.css', '!src/css/lib'])
     .pipe(gulp.dest('dist/css'))
     .pipe(cssnano())
     .pipe(rename({
