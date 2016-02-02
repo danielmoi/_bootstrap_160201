@@ -3,7 +3,7 @@
 /* Typography */
 
 .fa {
-  vertical-align: text-bottom;
+  vertical-align: bottom;
   line-height: 1.42857143;
 }
 
@@ -23,6 +23,7 @@ body {
 
 section h2 {
   padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 /* Nav Bar */
@@ -36,6 +37,16 @@ section h2 {
   color: #fff;
 }
 
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+}
+
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
 
 /* Links */
 
@@ -95,8 +106,10 @@ a:hover {
 
 .my-work {
   position: relative;
-  min-height: 130%;
+  min-height: 100%;
+  padding-bottom: 50px;
 }
+
 
 
 /* Contact */
