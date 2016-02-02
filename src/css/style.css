@@ -6,14 +6,20 @@
   box-sizing: border-box;
 }
 
+
 /* Globals */
+
+
 /* Typography */
+
 .fa {
-  vertical-align: text-bottom;
+  vertical-align: bottom;
   line-height: 1.42857143;
 }
 
+
 /* Base structure */
+
 html,
 body {
   height: 100%;
@@ -28,9 +34,12 @@ body {
 
 section h2 {
   padding-top: 50px;
+  padding-bottom: 20px;
 }
 
+
 /* Nav Bar */
+
 .navbar-default {
   background: linear-gradient(#111, #333);
   border: none;
@@ -40,14 +49,38 @@ section h2 {
   color: #fff;
 }
 
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+  color: #111;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #fff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fff;
+}
+
+
 /* Links */
+
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
 
+
 /* Custom default button */
+
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
@@ -58,7 +91,9 @@ a:hover {
   border: 1px solid #fff;
 }
 
+
 /* Home */
+
 .home {
   position: relative;
   background-image: url("../img/pen_unsplash.jpg");
@@ -72,6 +107,7 @@ a:hover {
   left: 0;
   right: 0;
 }
+
 .greeting p {
   font-size: 20px;
 }
@@ -87,13 +123,21 @@ a:hover {
   width: 50px;
 }
 
+
 /* My Work */
+
 .my-work {
   position: relative;
   min-height: 130%;
 }
 
+.my-work .row {
+  padding-bottom: 20px;
+}
+
+
 /* Contact */
+
 .contact {
   background-color: #d8d8d8;
   background-image: url("../img/hangar_unsplash.jpg");
