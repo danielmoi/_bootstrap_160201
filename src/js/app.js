@@ -1,8 +1,11 @@
 (function () {
   var start = 'daniel',
-    at = '&#64;',
+    at = '@',
     middle = 'ampersandmoi',
-    dot = '&#46;',
+    dot = '.',
     finish = 'com';
-  $('#email').html(start + at + middle + dot + finish);
+  $('.email-1').html(start + at + middle + dot + finish);
+  $('.email-1').attr('href', 'mailto:' + start + at + middle + dot + finish);
+  $('.email-2').attr('href', 'mailto:' + start + at + middle + dot + finish);
+  
 }());
