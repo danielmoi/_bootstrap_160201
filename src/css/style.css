@@ -1,66 +1,124 @@
-/*
-Error: Invalid CSS after " *\/": expected "}", was ""
-        on line 94 of /Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/_main.scss
-        from line 11 of /Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/style.scss
+* {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-89:  *\/
+/* Globals */
+/* Typography */
+.fa {
+  vertical-align: text-bottom;
+  line-height: 1.42857143;
+}
 
-Backtrace:
-/Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/_main.scss:94
-/Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/style.scss:11
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:1164:in `expected'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:1099:in `expected'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:1094:in `tok!'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:643:in `block'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:635:in `ruleset'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:660:in `block_child'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:653:in `block_contents'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/scss/parser.rb:42:in `parse'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/engine.rb:393:in `_to_tree'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/engine.rb:299:in `to_tree'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:307:in `visit_import'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:88:in `with_import'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:115:in `with_frame'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:88:in `with_import'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:306:in `visit_import'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:79:in `with_base'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:115:in `with_frame'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/stack.rb:79:in `with_base'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-org/jruby/RubyArray.java:2412:in `map'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:161:in `visit_children'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:151:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/engine.rb:268:in `render'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-org/jruby/RubyMethod.java:136:in `call'
-file:/Applications/compass.app/Contents/Java/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
-org/jruby/RubyArray.java:1613:in `each'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.1/lib/sass/plugin/compiler.rb:329:in `watch'
-org/jruby/RubyProc.java:271:in `call'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/listener.rb:271:in `initialize_adapter'
-org/jruby/RubyProc.java:271:in `call'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/adapter.rb:244:in `report_changes'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/adapter.rb:313:in `poll_changed_directories'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.1.6/lib/listen/adapter.rb:289:in `start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \" */\": expected \"}\", was \"\"\A         on line 94 of /Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/_main.scss\A         from line 11 of /Users/danielmoi/Documents/HOMEBASE/Education/Udacity/_bootstrap_160201/src/sass/style.scss\A \A 89:  */"; }
+/* Base structure */
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+  padding-top: 50px;
+}
+
+/* Nav Bar */
+.navbar-default {
+  background: linear-gradient(#111, #333);
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #fff;
+  text-shadow: none;
+  /* Prevent inheritence from `body` */
+  background: none;
+  border: 1px solid #fff;
+}
+
+/* Home */
+.home {
+  position: relative;
+  background-image: url("../img/pen_unsplash.jpg");
+  background-size: cover;
+  min-height: 100%;
+}
+
+.greeting {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+.greeting p {
+  font-size: 20px;
+}
+
+.more {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 0;
+  font-size: 3em;
+  width: 50px;
+}
+
+/* My Work */
+.my-work {
+  position: relative;
+  min-height: 130%;
+}
+
+/* Contact */
+.contact {
+  background-color: #d8d8d8;
+  background-image: url("../img/hangar_unsplash.jpg");
+  background-size: cover;
+  min-height: 100%;
+  position: relative;
+}
+
+.email {
+  font-size: 1.3em;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.network {
+  padding-bottom: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
